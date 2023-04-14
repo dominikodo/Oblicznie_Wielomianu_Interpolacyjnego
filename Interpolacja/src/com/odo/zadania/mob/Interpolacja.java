@@ -38,7 +38,7 @@ public class Interpolacja {
                 listaPunktow.add(punkt);
 
                 //System.out.println("punkt"+ scanner.nextDouble()+","+scanner.nextDouble());
-                System.out.println("punkt"+punkt.getX()+","+punkt.getY());
+                System.out.println("punkt: ("+punkt.getX()+","+punkt.getY()+")");
             }
 
         }
