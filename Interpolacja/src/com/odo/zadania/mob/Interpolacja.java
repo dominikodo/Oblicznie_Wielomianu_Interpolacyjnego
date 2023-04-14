@@ -53,56 +53,15 @@ public class Interpolacja {
         //System.out.println(listaPunktow);
     }
 
-    /*void obliczWzor(){
-
-        //String wielomian="test wiel";
-
-        int n = listaPunktow.size();
-
-        double[] wspolczynniki = new double[n];
-
-
-
-        wspolczynniki[0] = listaPunktow.get(0).getY();
-
-        for (int i = 1; i < n; i++) {
-            for (int j = i; j >= 1; j--) {
-                double licznik = wspolczynniki[j - 1] - wspolczynniki[j];
-                double mianownik = listaPunktow.get(j - 1).getX() - listaPunktow.get(j + i - 1).getX();
-                wspolczynniki[j] = licznik / mianownik;
-            }
-            wspolczynniki[0] = listaPunktow.get(0).getY();
-        }
-
-
-        int nw = wspolczynniki.length;
-
-        for (int i = 0; i < nw; i++) {
-            System.out.print(wspolczynniki[i]);
-            if (i > 0) {
-                System.out.print(" * x");
-                for (int j = 1; j < i; j++) {
-                    System.out.print(" * (x - " + listaPunktow.get(j - 1).getX() + ")");
-                }
-            }
-            System.out.print(" + ");
-        }
-        System.out.println("0");
-
-       // return wielomian;
-    }*/
-
     void obliczWzor(){
 
         int n = listaPunktow.size();
         double[] wspolczynniki = new double[n];
 
-        // Ustawienie pierwszych współczynników
         for (int i = 0; i < n; i++) {
             wspolczynniki[i] = listaPunktow.get(i).getY();
         }
 
-        // Obliczanie kolejnych współczynników
         for (int i = 1; i < n; i++) {
             for (int j = n - 1; j >= i; j--) {
                 double licznik = wspolczynniki[j] - wspolczynniki[j - 1];
@@ -111,7 +70,7 @@ public class Interpolacja {
             }
         }
 
-        // Wypisywanie wzoru wielomianu
+
         int nw = wspolczynniki.length;
         String wynik="W(x)= ";
 
@@ -125,6 +84,7 @@ public class Interpolacja {
             }
         }
         System.out.println(wynik);
+
     }
 
 }
