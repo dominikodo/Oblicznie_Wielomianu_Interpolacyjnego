@@ -25,7 +25,7 @@ public class InterpolacjaTest {
 
             interpolacja.odczytZPliku(nazwaPliku);
 
-            System.out.println(interpolacja.obliczWzor());
+            interpolacja.obliczWzor();
 
 
             //C:\Users\piese\Desktop\Metody Obliczeniowe\Oblicznie_Wielomianu_Interpolacyjnego\Interpolacja\plik.txt
