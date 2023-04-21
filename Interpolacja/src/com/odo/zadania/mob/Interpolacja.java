@@ -86,6 +86,39 @@ public class Interpolacja {
         System.out.println(wynik);
 
     }
+    
+    void obliczanieAproksymacja(int m){//chwilowo w tym repozytorium bo drugiego nie wypushowałem 
+        
+        int k=m*2;
+        int i listaPunktow.size;
+        
+        double sWyznacznik
+            
+        double[][] tabSk,tabTk, s, t, sDopalnien, sTransponowana, sOdwrotna;
+        
+        tabSK= new double[i][(k+1)];
+        
+        for(int j=0; j<=i;  j++){
+            for(int l=k; l>=0; l--){
+            
+                tabSK[j][l] = pow(listaPunktow.get(j).getX(),l); 
+                    
+            }
+        }
+        
+        tabTk = new double[i][m];
+        
+        for(int j=0; j<=i;  j++){
+            for(int l=0; l=2; l++){
+            
+                tabTK[j][m] = pow(listaPunktow.get(j).getX(),l); 
+                    
+            }
+        }
+        
+    
+    }
+        
 
 }
 
