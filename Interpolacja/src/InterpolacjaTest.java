@@ -1,4 +1,3 @@
-package com.odo.zadania.mob;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -14,8 +13,6 @@ public class InterpolacjaTest {
             Interpolacja interpolacja = new Interpolacja();
             Scanner scanner = new Scanner(System.in);
 
-
-            //ArrayList<Point> p = new ArrayList<>();
             String nazwaPliku = new String();
 
             System.out.println("Podaj nazwe ścieżkę pliku: ");

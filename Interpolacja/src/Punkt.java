@@ -1,5 +1,3 @@
-package com.odo.zadania.mob;
-
 public class Punkt {
 
     private double x;
