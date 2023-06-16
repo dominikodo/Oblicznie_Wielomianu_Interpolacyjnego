@@ -132,11 +132,11 @@ public class Interpolacja {
                     +(tablica[1]*tablica[3])+(tablica[1]*tablica[4])+(tablica[1]*tablica[5])+(tablica[2]*tablica[3])+(tablica[2]*tablica[4])+(tablica[2]*tablica[5])
                     +(tablica[3]*tablica[4])+(tablica[3]*tablica[5])+(tablica[4]*tablica[5]);
 
-            licznik[3]=(tablica[0]*tablica[1]*tablica[2])+(tablica[0]*tablica[1]*tablica[3])+(tablica[0]*tablica[1]*tablica[4])+(tablica[0]*tablica[1]*tablica[5])
+            licznik[3]=((tablica[0]*tablica[1]*tablica[2])+(tablica[0]*tablica[1]*tablica[3])+(tablica[0]*tablica[1]*tablica[4])+(tablica[0]*tablica[1]*tablica[5])
                     +(tablica[0]*tablica[2]*tablica[3])+(tablica[0]*tablica[2]*tablica[4])+(tablica[0]*tablica[2]*tablica[5])+(tablica[0]*tablica[3]*tablica[4])
                     +(tablica[0]*tablica[3]*tablica[5])+(tablica[0]*tablica[4]*tablica[5])+(tablica[1]*tablica[2]*tablica[3])+(tablica[1]*tablica[2]*tablica[4])
                     +(tablica[1]*tablica[2]*tablica[5])+(tablica[1]*tablica[3]*tablica[4])+(tablica[1]*tablica[3]*tablica[5])+(tablica[1]*tablica[4]*tablica[5])
-                    +(tablica[2]*tablica[3]*tablica[4])+(tablica[2]*tablica[3]*tablica[5])+(tablica[2]*tablica[4]*tablica[5])+(tablica[3]*tablica[4]*tablica[5]);
+                    +(tablica[2]*tablica[3]*tablica[4])+(tablica[2]*tablica[3]*tablica[5])+(tablica[2]*tablica[4]*tablica[5])+(tablica[3]*tablica[4]*tablica[5]))*-1;
 
             licznik[4]=(tablica[0]*tablica[1]*tablica[2]*tablica[3])+(tablica[0]*tablica[1]*tablica[2]*tablica[4])+(tablica[0]*tablica[1]*tablica[2]*tablica[5])
                     +(tablica[0]*tablica[1]*tablica[3]*tablica[4])+(tablica[0]*tablica[1]*tablica[3]*tablica[5])+(tablica[0]*tablica[1]*tablica[4]*tablica[5])
@@ -144,8 +144,9 @@ public class Interpolacja {
                     +(tablica[0]*tablica[3]*tablica[4]*tablica[5])+(tablica[1]*tablica[2]*tablica[3]*tablica[4])+(tablica[1]*tablica[2]*tablica[3]*tablica[5])
                     +(tablica[1]*tablica[2]*tablica[4]*tablica[5])+(tablica[1]*tablica[3]*tablica[4]*tablica[5])+(tablica[2]*tablica[3]*tablica[4]*tablica[5]);
 
-            licznik[5]=(tablica[0]*tablica[1]*tablica[2]*tablica[3]*tablica[4])+(tablica[0]*tablica[1]*tablica[2]*tablica[3]*tablica[5])+(tablica[0]*tablica[1]*tablica[2]*tablica[4]*tablica[5])
-                    +(tablica[0]*tablica[1]*tablica[3]*tablica[4]*tablica[5])+(tablica[0]*tablica[2]*tablica[3]*tablica[4]*tablica[5])+(tablica[1]*tablica[2]*tablica[3]*tablica[4]*tablica[5]);
+            licznik[5]=((tablica[0]*tablica[1]*tablica[2]*tablica[3]*tablica[4])+(tablica[0]*tablica[1]*tablica[2]*tablica[3]*tablica[5])
+                    +(tablica[0]*tablica[1]*tablica[2]*tablica[4]*tablica[5]) +(tablica[0]*tablica[1]*tablica[3]*tablica[4]*tablica[5])
+                    +(tablica[0]*tablica[2]*tablica[3]*tablica[4]*tablica[5])+(tablica[1]*tablica[2]*tablica[3]*tablica[4]*tablica[5]))*-1;
 
             licznik[6]=(tablica[0]*tablica[1]*tablica[2]*tablica[3]*tablica[4]*tablica[5]);
 
@@ -173,7 +174,7 @@ public class Interpolacja {
             licznik[0]=1;
             licznik[1]=(tablica[0]+tablica[1]+tablica[2]+tablica[3])*-1;
             licznik[2]=(tablica[0]*tablica[1])+(tablica[0]*tablica[2])+(tablica[0]*tablica[3])+(tablica[1]*tablica[2])+(tablica[1]*tablica[3])+(tablica[2]*tablica[3]);
-            licznik[3]=(tablica[0]*tablica[1]*tablica[2])+(tablica[0]*tablica[1]*tablica[3])+(tablica[0]*tablica[2]*tablica[3])+(tablica[1]*tablica[2]*tablica[3])*-1;
+            licznik[3]=((tablica[0]*tablica[1]*tablica[2])+(tablica[0]*tablica[1]*tablica[3])+(tablica[0]*tablica[2]*tablica[3])+(tablica[1]*tablica[2]*tablica[3]))*-1;
             licznik[4]=tablica[0]*tablica[1]*tablica[2]*tablica[3];
 
 
@@ -181,8 +182,8 @@ public class Interpolacja {
         else if(n==3){
             licznik[0]=1;
             licznik[1]=(tablica[0]+tablica[1]+tablica[2])*-1;
-            licznik[2]=(tablica[0]*tablica[1])+(tablica[0]*tablica[2])+(tablica[1]*tablica[2])*-1;
-            licznik[3]=tablica[0]*tablica[1]*tablica[2];
+            licznik[2]=(tablica[0]*tablica[1])+(tablica[0]*tablica[2])+(tablica[1]*tablica[2]);
+            licznik[3]=(tablica[0]*tablica[1]*tablica[2])*-1;
             //System.out.println(tablica[0]+" "+tablica[1]+" "+tablica[2]);
            // System.out.println("Wielomian: "+licznik[0]+"x^3+"+licznik[1]+"x^2+"+licznik[2]+"x+"+licznik[3]);
 
